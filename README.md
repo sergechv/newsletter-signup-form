@@ -4,8 +4,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/news-letter-signup-form-using-html-css-and-javascript-LRbJxNTD2D)
-- Live Site URL: [Add live site URL here](https://sergechv.github.io/newsletter-signup-form/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/news-letter-signup-form-using-html-css-and-javascript-LRbJxNTD2D)
+- Live Site URL: [Live site](https://sergechv.github.io/newsletter-signup-form/)
 
 ### Built with
 
