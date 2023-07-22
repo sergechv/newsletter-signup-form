@@ -1,0 +1,293 @@
+
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-gray: hsl(234, 29%, 20%);
+  --charcoal-gray: hsl(235, 18%, 26%);
+  --gray: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--charcoal-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  border-radius: 22px;
+}
+
+.info {
+  margin: 0 38px;
+  width: 270px;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--dark-slate-gray);
+  margin-bottom: 18px;
+}
+
+.info>p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--dark-slate-gray);
+  margin-bottom: 18px;
+}
+
+.spanP {
+  display: flex;
+  align-items: center;
+  place-items: start;
+}
+
+.iconInfo {
+  width: 14px;
+  height: 14px;
+  background-image: url(./assets/images/icon-success.svg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.spanP p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--dark-slate-gray);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+form {
+  position: relative;
+}
+
+label {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 10px;
+  display: inline-block;
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+.err-msg {
+  position: absolute;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 10px;
+  color: salmon;
+  right: 0;
+  top: 22px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--gray);
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border: 1px solid var(--dark-slate-gray);
+  outline: none;
+}
+
+.error {
+  border: 1px solid salmon;
+  color: salmon;
+  background-color: #ffe8e6;
+}
+
+.btn-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  width: 100%;
+  height: 42px;
+  background-color: var(--dark-slate-gray);
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-sub:hover {
+  background-color: var(--tomato);
+  box-shadow: 0 2px 10px var(--tomato);
+
+}
+
+figure {
+  width: 260px;
+  height: 440px;
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  margin: 14px 14px 14px 0;
+  border-radius: 12px;
+}
+
+/* Success card start */
+.success {
+  background-color: var(--white);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-items: flex-start;
+  width: 240px;
+  height: auto;
+  padding: 30px 38px;
+  border-radius: 20px;
+}
+
+.icon {
+  width: 38px;
+  height: 38px;
+  background-image: url(./assets/images/icon-success.svg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 22px;
+}
+
+.thanks {
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  color: var(--dark-slate-gray);
+  margin-bottom: 20px;
+}
+
+.confirmation {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  color: var(--dark-slate-gray);
+  margin-bottom: 22px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  width: 100%;
+  height: 34px;
+  background-color: var(--dark-slate-gray);
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  background-color: var(--tomato);
+  box-shadow: 0 2px 10px var(--tomato);
+
+}
+
+/* Success card end */
+
+/* Mobile design */
+
+@media (max-width: 634px) {
+
+  main {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    border-radius: 22px;
+  }
+
+  figure {
+    width: 300px;
+    height: 200px;
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-right: 0px;
+    border-radius: 22px;
+  }
+
+  .info {
+    margin: 0 15px;
+    margin-bottom: 12px;
+    width: 270px;
+  }
+
+  .success {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 19px;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 44px;
+  }
+
+  .btn-sub {
+    font-size: 12px;
+  }
+
+  .success {
+    box-sizing: border-box;
+  }
+
+  .confirmation {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .btn {
+    margin-top: 222px;
+    height: 54px;
+    font-size: 14px;
+  }
+}
